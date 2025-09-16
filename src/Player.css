@@ -1,0 +1,16 @@
+.player-card {
+    margin-top: -10px;
+    gap: 5px;
+	width: 18rem;
+	border: 2px solid #007bff;
+	background-color: #4caf50;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.player-card:hover {
+	transform: translateY(-7px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
