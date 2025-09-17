@@ -6,7 +6,7 @@ function App() {
 	return (
 		<div
 			style={{
-				marginTop: "-22px",
+				marginTop: "-2px",
 			}}>
 			<h1 className="stylish-title">Football Players ⚽ : </h1>
 			<PlayersList />

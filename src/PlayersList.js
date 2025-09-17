@@ -7,7 +7,7 @@ const PlayersList = () => {
 	return (
 		<Container
 			style={{
-				marginTop: "-12px",
+				marginBottom: "42px",
 				padding: "10px",
 				gap: "10px",
 			}}>
@@ -21,7 +21,7 @@ const PlayersList = () => {
 						lg={3}
 						className="d-flex justify-content-center  p-3"
 						style={{
-							marginTop: "-22px",
+							marginTop: "22px",
 						}}>
 						<Player {...player} />
 					</Col>

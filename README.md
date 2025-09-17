@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Football Players React App ⚽
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and interactive React application that displays a list of football players using **React-Bootstrap** cards. Each player card shows details like name, team, nationality, jersey number, age, and image. Clicking a card opens a modal with a larger view of the player's image.
 
-## Available Scripts
+The app is styled with a football field green theme, floating card effects, and a stylish title font.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Author](#author)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![Screenshot-2025-09-17-151732.png](https://i.postimg.cc/7PTpx7ry/Screenshot-2025-09-17-151732.png)](https://postimg.cc/V5m7gJN7)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Responsive layout using **Bootstrap 5**.
+- Player cards with hover float effect.
+- Modal popup to view a larger player image.
+- Styled with a football field green theme.
+- Stylish header with custom font ("Orbitron").
+- Cards maintain correct aspect ratio using `object-fit: cover`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React.js](https://reactjs.org/)
+- [React-Bootstrap](https://react-bootstrap.github.io/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- CSS (custom styling for cards and title)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- The app displays a list of football players in cards.
 
-## Learn More
+- Hover over a card to see it float slightly.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Click on a card to open a modal with a larger image of the player.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The layout adjusts automatically for mobile, tablet, and desktop screens.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Structure
 
-### Analyzing the Bundle Size
+players-cards/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── Player.js
+│ │ ├── PlayersList.js
+│ ├── data/
+│ │ └── players.js
+│ ├── App.js
+│ ├── App.css
+│ └── index.js
+├── package.json
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Player.js → Player card component with modal and hover float effect.
 
-### Making a Progressive Web App
+- PlayersList.js → Maps through the player array and displays cards in a responsive grid.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- players.js → Array of player objects with name, team, nationality, jersey number, age, and image URL.
 
-### Advanced Configuration
+## Styling Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Header:**  
+  Uses the _Orbitron_ font, bold, italic, with a green background matching the football field theme.
 
-### Deployment
+- **Cards:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  - Green-themed with `rgba` backgrounds to match the field.
+  - Hover effect using `transform: translateY(-10px)` and `box-shadow`.
+  - Card images use `object-fit: cover` to maintain proper aspect ratio.
 
-### `npm run build` fails to minify
+- **Layout:**
+  - Bootstrap `Container` + `Row` + `Col` with `g-4` for consistent gaps.
+  - Responsive breakpoints (`xs`, `sm`, `md`, `lg`) ensure cards wrap naturally.
+  - Bottom padding ensures the last row is fully visible without scrolling issues.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+**Yosef Berrak**
+
+- GitHub: [youssefberrk](https://github.com/youssefberrk)
+- LinkedIn: [www.linkedin.com/in/youssef-berrakouan](https://www.linkedin.com/in/youssef-berrakouan)
