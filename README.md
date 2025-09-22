@@ -18,7 +18,7 @@ It adds **new interactivity** for swapping players between **field** and **bench
 
 ## 📸 Demo
 
-![Demo GIF](demo-gif.gif)
+![Demo GIF](assets/demo-gif.gif)
 
 > The above demo shows selecting a player on the bench, then selecting a player on the field to swap them.
 
