@@ -5,7 +5,7 @@ It adds **new interactivity** for swapping players between **field** and **bench
 
 ---
 
-## 🚀 Features
+## ✨ Features
 - Display players grouped into **Field** and **Bench** sections.
 - Click-to-select players:  
   - Select one player from the **bench** and another from the **field** to swap them.  
