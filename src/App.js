@@ -9,7 +9,8 @@ function App() {
 				marginTop: "-2px",
 			}}>
 			<h1 className="stylish-title">Football Players ⚽ : </h1>
-			<PlayersList />
+			<PlayersList situation={true} />
+			
 		</div>
 	);
 }
